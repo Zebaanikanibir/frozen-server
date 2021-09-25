@@ -100,6 +100,7 @@ app.get('/orderList',(req, res)=>{
 
     cartCollection.deleteOne({ _id: objectId(req.params.id) })
     
+    
     .then(result =>{
       console.log(result)
     })
